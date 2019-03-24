@@ -25,5 +25,6 @@ titulo2 <- peliculas %>% html_nodes(".lister-item-header a") %>% html_text()
 rank <- peliculas %>% html_nodes(".ratings-imdb-rating strong") %>% html_text() %>% as.numeric()
 
 
+base <- data.frame(titulo2, rank)
 
 
